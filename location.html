@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Karishma Vegetarian Restaurant</title>
+   
+
+</head>
+<body><header>
+    <div style="display:flex">
+    <h1 >Karishma Vegetarian Restaurant</h1>
+    
+        <div  class="navbar">
+        
+            <div><a  class="blocker" href="index.html">Home</a></div>
+            <div><a  class="blocker" href="about.html">About Us</a></div>
+            <div><a  class="blocker" href="menu.html">Menu</a></div>
+            <div><a   class="blocker" href="gallery.html">Photo Gallery</a></div>
+            <div><a  class="blocker" href="location.html">Store locator</a></div>
+            <div><a   class="blocker" href="offers.html">Offers</a></div>
+            <div><a   class="blocker" href="testimonials.html">Testimonials</a></div>
+            <div><a class="blocker" href="contact.html">Contact Us</a></div>
+        </div>
+        
+    </div>
+</header>
+
+<h1 style="color:lightgreen;text-align: center;">You can find us here</h1>
+
+<div id="map"></div>
+<footer>
+    <p>&copy; 2024 Karishma Vegetarian Restaurant</p>
+</footer>
+<script>
+    function initMap(){
+        var options={
+            zoom:14,
+            center:{lat:13.7527,lng:79.7067}
+        }
+        var map= new
+        google.maps.Map(document.getElementById('map'),options);
+    }
+</script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6MLFX2E6NLzPP5nIvzmVNh08pZajgvVA&loading=async&callback=initMap">
+</script>
+    <script src="script.js"></script>
+  
+</body>
+</html>
